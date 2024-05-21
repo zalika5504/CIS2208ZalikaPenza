@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include layout="@layout/essential" />
+
+    <!-- Center the CardView horizontally and vertically -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#8BFF9800">
+
+        <!-- Add a RelativeLayout as a container for the quiz content -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <!-- Add TextViews for title, question, and description -->
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flashcard Title"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:id="@+id/textViewQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flashcard Question"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flashcard Description"
+                android:visibility="gone"
+                android:layout_below="@id/textViewQuestion"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/buttonShowAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Answer"
+                android:layout_below="@id/textViewDescription"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#B0ED724B"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Button for next flashcard -->
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="#B0ED724B"
+        android:text="Next" />
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="#ffffff" android:layout_width="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="163dp"
+        android:backgroundTint="#FF9800"
+        android:text="Login"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonSignup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/buttonLogin"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#FF9800"
+        android:text="Sign Up"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

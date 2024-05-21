@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="#ffffff" android:layout_width="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Create an Account"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/TextAppearance.CustomLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:text="Name:*" />
+
+    <EditText
+        style="@style/TextAppearance.CustomEditText"
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:hint="Enter your name" />
+
+    <TextView
+        style="@style/TextAppearance.CustomLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastNameLabel"
+        android:layout_below="@id/editTextName"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:text="Last Name:*" />
+
+    <EditText
+        style="@style/TextAppearance.CustomEditText"
+        android:id="@+id/editTextLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastNameLabel"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:hint="Enter your last name" />
+
+    <TextView
+        android:id="@+id/textViewEmailLabel"
+        style="@style/TextAppearance.CustomLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLastName"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:text="Email:*" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        style="@style/TextAppearance.CustomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEmailLabel"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress" />
+    <TextView
+        style="@style/TextAppearance.CustomLabel"
+        android:id="@+id/textViewPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:text="Password:*" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        style="@style/TextAppearance.CustomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPasswordLabel"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:hint="Enter your password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:backgroundTint="#FF9800"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/textViewLogin"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF9800"
+        android:text="Already have an account? Login" />
+
+
+
+
+</RelativeLayout>

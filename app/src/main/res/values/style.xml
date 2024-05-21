@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.CustomLabel">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="TextAppearance.CustomEditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:background">@drawable/edit_text_outline</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+
+    <style name="TextAppearance"></style>
+
+</resources>

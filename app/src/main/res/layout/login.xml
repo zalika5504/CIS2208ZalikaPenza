@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="#ffffff" android:layout_width="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Sign In "
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/TextAppearance.CustomLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:text="Email:*" />
+    <EditText
+        style="@style/TextAppearance.CustomEditText"
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:hint="Enter your Email" />
+
+    <TextView
+        style="@style/TextAppearance.CustomLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPasswordLabel"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:text="Password:*" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        style="@style/TextAppearance.CustomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:hint="Enter your Password" />
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:backgroundTint="#FF9800"
+        android:text="Sign In"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/textViewLogin"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:backgroundTint="#FF9800"
+        android:text="Need an account?" />
+
+
+</RelativeLayout>
