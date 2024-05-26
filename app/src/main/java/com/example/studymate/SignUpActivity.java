@@ -13,7 +13,7 @@ public class SignUpActivity extends AppCompatActivity {
 
     private EditText editTextName, editTextEmail, editTextPassword;
     private Button buttonSignUp;
-    private TextView textViewLogin; // Added TextView for login link
+    private TextView textViewLogin;
     private UserDatabaseHelper databaseHelper;
 
     @Override

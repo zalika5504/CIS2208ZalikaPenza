@@ -49,7 +49,7 @@ public class UserDatabaseHelper extends SQLiteOpenHelper {
                 + COLUMN_FLASHCARD_TITLE + " TEXT,"
                 + COLUMN_FLASHCARD_DESCRIPTION + " TEXT,"
                 + COLUMN_FLASHCARD_QUESTION + " TEXT,"
-                + COLUMN_USER_ID + " INTEGER"  // Add user_id column here
+                + COLUMN_USER_ID + " INTEGER"
                 + ")";
         db.execSQL(CREATE_TABLE_FLASHCARDS);
     }

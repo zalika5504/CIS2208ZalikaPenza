@@ -29,8 +29,8 @@ public class CardsActivity extends BaseActivity implements FlashcardAdapter.OnIt
 
         recyclerView = findViewById(R.id.recyclerViewFlashcards);
 
-        // Adjust layout manager to display multiple flashcards per line
-        int numberOfColumns = 2; // Change this to the desired number of columns
+
+        int numberOfColumns = 2;
         recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
 
         dbHelper = new UserDatabaseHelper(this);
